@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <center>
+        <h1>Periodic Table</h1>
+        <table id = "table">
+            <!--first row-->
+            <tr>
+                <td><span class="num">1</span><br>H</td>
+                <td class = "invis" colspan="16"></td>
+                <td><span class="num">2</span><br>He</td>
+            </tr>
+            <!--second row-->
+            <tr>
+                <td><span class="num">3</span><br>Li</td>
+                <td class = "oneFound"><span class="num">4</span><br>Be</td>
+                <td class = "invis" colspan="10"></td>
+                <td><span class="num">5</span><br>B</td>
+                <td><span class="num">6</span><br>C</td>
+                <td><span class="num">7</span><br>N</td>
+                <td><span class="num">8</span><br>O</td>
+                <td><span class="num">9</span><br>F</td>
+                <td><span class="num">10</span><br>Ne</td>
+            </tr>
+            <!--third row-->
+            <tr>
+                <td class = "oneFound"><span class="num">11</span><br>Na</td>
+                <td class = "threeFound"><span class="num">12</span><br>Mg</td>
+                <td class = "invis" colspan="10"></td>
+                <td><span class="num">13</span><br>Al</td>
+                <td><span class="num">14</span><br>Si</td>
+                <td><span class="num">15</span><br>P</td>
+                <td><span class="num">16</span><br>S</td>
+                <td><span class="num">17</span><br>Cl</td>
+                <td><span class="num">18</span><br>Ar</td>
+            </tr>
+            <!--fourth row-->
+            <tr>
+                <td><span class="num">19</span><br>K</td>
+                <td class = "oneFound"><span class="num">20</span><br>Ca</td>
+                <td><span class="num">21</span><br>Sc</td>
+                <td class = "threeFound"><span class="num">22</span><br>Ti</td>  <!--sevenfound-->
+                <td class = "threeFound"><span class="num">23</span><br>V</td> <!--sixFound-->>
+                <td class = "threeFound"><span class="num">24</span><br>Cr</td> <!--six-->
+                <td class = "oneFound"><span class="num">25</span><br>Mn</td>
+                <td class = "oneFound"><span class="num">26</span><br>Fe</td>
+                <td class = "twoFound"><span class="num">27</span><br>Co</td> <!--threeFound-->>
+                <td class = "twoFound"><span class="num">28</span><br>Ni</td> <!--three-->>
+                <td><span class="num">29</span><br>Cu</td>
+                <td><span class="num">30</span><br>Zn</td>
+                <td><span class="num">31</span><br>Ga</td>
+                <td><span class="num">32</span><br>Ge</td>
+                <td><span class="num">33</span><br>As</td>
+                <td><span class="num">34</span><br>Se</td>
+                <td><span class="num">35</span><br>Br</td>
+                <td><span class="num">36</span><br>Kr</td>
+            </tr>
+            <!--fifth row-->
+            <tr>
+                <td><span class="num">37</span><br>Rb</td>
+                <td><span class="num">38</span><br>Sr</td>
+                <td><span class="num">39</span><br>Y</td>
+                <td class = "threeFound"><span class="num">40</span><br>Zr</td> <!--four-->>
+                <td class = "threeFound"><span class="num">41</span><br>Nb</td> <!--six-->>
+                <td class = "threeFound"><span class="num">42</span><br>Mo</td>
+                <td class = "oneFound"><span class="num">43</span><br>Tc</td>
+                <td><span class="num">44</span><br>Ru</td>
+                <td><span class="num">45</span><br>Rh</td>
+                <td class = "oneFound"><span class="num">46</span><br>Pd</td>
+                <td><span class="num">47</span><br>Ag</td>
+                <td><span class="num">48</span><br>Cd</td>
+                <td class = "oneFound"><span class="num">49</span><br>In</td>
+                <td class = "threeFound"><span class="num">50</span><br>Sn</td>
+                <td><span class="num">51</span><br>Sb</td>
+                <td><span class="num">52</span><br>Te</td>
+                <td><span class="num">53</span><br>I</td>
+                <td><span class="num">54</span><br>Xe</td>
+            </tr>
+            <!--sixth row-->
+            <tr>
+                <td><span class="num">55</span><br>Cs</td>
+                <td><span class="num">56</span><br>Ba</td>
+                <td><span class="num">57</span><br>La</td>
+                <td class = "threeFound"><span class="num">72</span><br>Hf</td>
+                <td class = "threeFound"><span class="num">73</span><br>Ta</td>
+                <td class = "threeFound"><span class="num">74</span><br>W</td>
+                <td class = "threeFound"><span class="num">75</span><br>Re</td>
+                <td><span class="num">76</span><br>Os</td>
+                <td class = "oneFound"><span class="num">77</span><br>Ir</td>
+                <td class = "threeFound"><span class="num">78</span><br>Pt</td>
+                <td><span class="num">79</span><br>Au</td>
+                <td><span class="num">80</span><br>Hg</td>
+                <td><span class="num">81</span><br>Tl</td>
+                <td class = "threeFound"><span class="num">82</span><br>Pb</td>
+                <td class = "twoFound"><span class="num">83</span><br>Bi</td>
+                <td><span class="num">84</span><br>Po</td>
+                <td><span class="num">85</span><br>At</td>
+                <td><span class="num">86</span><br>Rn</td>
+            </tr>
+            <!--seventh row-->
+            <tr>    
+                <td><span class="num">87</span><br>Fr</td>
+                <td><span class="num">88</span><br>Ra</td>
+                <td><span class="num">89</span><br>Ac</td>
+                <td><span class="num">104</span><br>Rf</td>
+                <td><span class="num">105</span><br>Db</td>
+                <td><span class="num">106</span><br>Sg</td>
+                <td><span class="num">107</span><br>Bh</td>
+                <td><span class="num">108</span><br>Hs</td>
+                <td><span class="num">109</span><br>Mt</td>
+                <td><span class="num">110</span><br>Ds</td>
+                <td><span class="num">111</span><br>Rg</td>
+                <td><span class="num">112</span><br>Cn</td>
+                <td><span class="num">113</span><br>Nh</td>
+                <td><span class="num">114</span><br>Fl</td>
+                <td><span class="num">115</span><br>Mc</td>
+                <td><span class="num">116</span><br>Lv</td>
+                <td><span class="num">117</span><br>Ts</td>
+                <td><span class="num">118</span><br>Og</td>
+            </tr>
+            <!--separator "row"-->
+            <tr>
+                <td class = "invis" colspan = "18"></td>
+            </tr>
+            <!--bottom two rows-->
+            <tr>
+                <td class = "invis" colspan="3"></td>
+                <td><span class="num">58</span><br>Ce</td>
+                <td><span class="num">59</span><br>Pr</td>
+                <td><span class="num">60</span><br>Nd</td>
+                <td><span class="num">61</span><br>Pm</td>
+                <td><span class="num">62</span><br>Sm</td>
+                <td><span class="num">63</span><br>Eu</td>
+                <td><span class="num">64</span><br>Gd</td>
+                <td><span class="num">65</span><br>Tb</td>
+                <td><span class="num">66</span><br>Dy</td>
+                <td><span class="num">67</span><br>Ho</td>
+                <td><span class="num">68</span><br>Er</td>
+                <td><span class="num">69</span><br>Tm</td>
+                <td><span class="num">70</span><br>Yb</td>
+                <td><span class="num">71</span><br>Lu</td>
+            </tr>
+            <tr>
+                <td class = "invis" colspan="3"></td>
+                <td><span class="num">90</span><br>Th</td>
+                <td><span class="num">91</span><br>Pa</td>
+                <td><span class="num">92</span><br>U</td>
+                <td><span class="num">93</span><br>Np</td>
+                <td><span class="num">94</span><br>Pu</td>
+                <td><span class="num">95</span><br>Am</td>
+                <td><span class="num">96</span><br>Cm</td>
+                <td><span class="num">97</span><br>Bk</td>
+                <td><span class="num">98</span><br>Cf</td>
+                <td><span class="num">99</span><br>Es</td>
+                <td><span class="num">100</span><br>Fm</td>
+                <td><span class="num">101</span><br>Md</td>
+                <td><span class="num">102</span><br>No</td>
+                <td><span class="num">103</span><br>Lr</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table class = "popup">
+            <tr id = "oxidation state"></tr>
+            <tr id = "s"></tr>
+            <tr id = "se"></tr>
+            <tr id = "te"></tr>
+        </table>
+    </center>
+    <script>
+        const cells = document.querySelectorAll("td");
+        cells.forEach(cell=>{cell.addEventListener("click", () => click(cell.closest("tr").rowIndex, cell.cellIndex));
+        });
+        function getIndexCode(x, y){
+            return x + (y*10);
+        }
+        const indexCodeToAtomicNum = {
+            //col*10 + row (indexed at 0)
+            0 : 1,
+            20 : 2,
+            1 : 3,
+            11 : 4,
+            31 : 5,
+            41 : 6,
+            51 : 7,
+            61 : 8,
+            71 : 9,
+            81 : 10,
+            2 : 11,
+            12 : 12,
+            32 : 13,
+            42 : 14,
+            52 : 15,
+            62 : 16,
+            72 : 17,
+            82 : 18,
+            3 : 19,
+            13 : 20, 
+            23 : 21,
+            33 : 22, 
+            43 : 23,
+            53 : 24,
+            63 : 25,
+            73 : 26,
+            83 : 27,
+            93 : 28,
+            103 : 29,
+            113 : 30,
+            123 : 31,
+            133 : 32,
+            143 : 33,
+            153 : 34,
+            163 : 35,
+            173 : 36,
+            4 : 37,
+            14 : 38,
+            24 : 39,
+            34 : 40,
+            44 : 41,
+            54 : 42,
+            64 : 43,
+            74 : 44,
+            84 : 45,
+            94 : 46,
+            104 : 47,
+            114 : 48,
+            124 : 49,
+            134 : 50,
+            144 : 51,
+            154 : 52,
+            164 : 53,
+            174 : 54,
+            5 : 55,
+            15 : 56,
+            25 : 57,
+            35 : 72,
+            45 : 73,
+            55 : 74,
+            65 : 75,
+            75 : 76,
+            85 : 77,
+            95 : 78,
+            105 : 79,
+            115 : 80,
+            125 : 81,
+            135 : 82,
+            145 : 83,
+            155 : 84,
+            165 : 85,
+            175 : 86,
+            6 : 87,
+            16 : 88,
+            26 : 89,
+            36 : 104,
+            46 : 105,
+            56 : 106,
+            66 : 107,
+            76 : 108,
+            86 : 109,
+            96 : 110,
+            106 : 111,
+            116 : 112,
+            126 : 113,
+            136 : 114,
+            146 : 115,
+            156 : 116,
+            166 : 117,
+            176 : 118,
+            18 : 58,
+            28 : 59,
+            38 : 60,
+            48 : 61,
+            58 : 62,
+            68 : 63,
+            78 : 64,
+            88 : 65,
+            98 : 66,
+            108 : 67,
+            118 : 68,
+            128 : 69,
+            138 : 70,
+            148 : 71,
+            19 : 90,
+            29 : 91,
+            39 : 92,
+            49 : 93,
+            59 : 94,
+            69 : 95,
+            79 : 96,
+            89 : 97,
+            99 : 98,
+            109 : 99,
+            119 : 100,
+            129 : 101,
+            139 : 102,
+            149 : 103
+        };
+        function getAtomicNum(x,y){
+            return indexCodeToAtomicNum[getIndexCode(x,y)];
+        }
+        const atomicNumToEnergies = {
+            1 : [[0],[0],[0]],
+            2 : [[0],[0],[0]],
+            3 : [[0],[0],[0]],
+            4 : [[5.224],[0],[0]],
+            5 : [[0],[0],[0]],
+            6 : [[0],[0],[0]],
+            7 : [[0],[0],[0]],
+            8 : [[0],[0],[0]],
+            9 : [[0],[0],[0]],
+            10 : [[0],[0],[0]],
+            //11 : can't access,
+            12 : [[0],[0],[3.805]],
+            13 : [[0],[0],[0]],
+            14 : [[0],[0],[0]],
+            15 : [[0],[0],[0]],
+            16 : [[0],[0],[0]],
+            17 : [[0],[0],[0]],
+            18 : [[0],[0],[0]],
+            19 : [[0],[0],[0]],
+            //20 : can't access,
+            21 : [[0],[0],[0]],
+            
+            //TI: one vacancy or two?
+            22 : [[3.58, 0.68],[0,1.54],[0,2.36]],
+            23 : [[0.96],[1.19],[1.85]],
+            24 : [[1.65],[2.25],[0.51]],
+            25 : [[0],[0],[0]],
+            26 : [[0],[0],[0]],
+            27 : [[0],[0],[1.34]],
+            28 : [[0],[0],[1.16]],
+            29 : [[0],[0],[0]],
+            30 : [[0],[0],[0]],
+            31 : [[0],[0],[0]],
+            32 : [[0],[0],[0]],
+            33 : [[0],[0],[0]],
+            34 : [[0],[0],[0]],
+            35 : [[0],[0],[0]],
+            36 : [[0],[0],[0]],
+            37 : [[0],[0],[0]],
+            38 : [[0],[0],[0]],
+            39 : [[0],[0],[0]],
+            40 : [[2.25],[2.37],[2.48]],
+            41 : [[1.12],[1.64],[1.93]],
+            42 : [["2.35, 2.21"],["2.82, 2.64"],["3.06, 3.1"]], 
+            43 : [[1.08],[0],[0]],
+            44 : [[0],[0],[0]],
+            45 : [[0],[0],[0]],
+            46 : [[0],[0],[1.53]],
+            47 : [[0],[0],[0]],
+            48 : [[0],[0],[0]],
+            49 : [[0],[0],[0]],
+            50 : [[0, 1.35],[0, 1.16],[0, 0]],
+            51 : [[0],[0],[0]],
+            52 : [[0],[0],[0]],
+            53 : [[0],[0],[0]],
+            54 : [[0],[0],[0]],
+            55 : [[0],[0],[0]],
+            56 : [[0],[0],[0]],
+            57 : [[0],[0],[0]],
+            58 : [[0],[0],[0]],
+            59 : [[0],[0],[0]],
+            60 : [[0],[0],[0]],
+            61 : [[0],[0],[0]],
+            62 : [[0],[0],[0]],
+            63 : [[0],[0],[0]],
+            64 : [[0],[0],[0]],
+            65 : [[0],[0],[0]],
+            66 : [[0],[0],[0]],
+            67 : [[0],[0],[0]],
+            68 : [[0],[0],[0]],
+            69 : [[0],[0],[0]],
+            70 : [[0],[0],[0]],
+            71 : [[0],[0],[0]],
+            72 : [[2.82],[2.89],[2.85]],
+            73 : [[1.46],[1.73],[1.43]],
+            74 : [[0],[0],[0]],
+            75 : [[1.6],[2.24],[2.92]],
+            76 : [[0],[0],[0]],
+            77 : [[0],[0],[2.72]],
+            78 : [[1.28],[1.89],[2.33]],
+            79 : [[0],[0],[0]],
+            80 : [[0],[0],[0]],
+            81 : [[0],[0],[0]],
+            82 : [[0],[0],[0]],
+            83 : [[0],[0],[0]],
+            84 : [[0],[0],[0]],
+            85 : [[0],[0],[0]],
+            86 : [[0],[0],[0]],
+            87 : [[0],[0],[0]],
+            88 : [[0],[0],[0]],
+            89 : [[0],[0],[0]],
+            90 : [[0],[0],[0]],
+            91 : [[0],[0],[0]],
+            92 : [[0],[0],[0]],
+            93 : [[0],[0],[0]],
+            94 : [[0],[0],[0]],
+            95 : [[0],[0],[0]],
+            96 : [[0],[0],[0]],
+            97 : [[0],[0],[0]],
+            98 : [[0],[0],[0]],
+            99 : [[0],[0],[0]],
+            100 : [[0],[0],[0]],
+            101 : [[0],[0],[0]],
+            102 : [[0],[0],[0]],
+            103 : [[0],[0],[0]],
+            104 : [[0],[0],[0]],
+            105 : [[0],[0],[0]],
+            106 : [[0],[0],[0]],
+            107 : [[0],[0],[0]],
+            108 : [[0],[0],[0]],
+            109 : [[0],[0],[0]],
+            110 : [[0],[0],[0]],
+            111 : [[0],[0],[0]],
+            112 : [[0],[0],[0]],
+            113 : [[0],[0],[0]],
+            114 : [[0],[0],[0]],
+            115 : [[0],[0],[0]],
+            116 : [[0],[0],[0]],
+            117 : [[0],[0],[0]],
+            118 : [[0],[0],[0]]
+        }
+        
+        const elementOx1 = [1,3,11,19,37,55,87];
+        const elementOx2 = [4,12,20,38,56,88];
+        const elementOx3 = [5,13,31,49];
+        const elementOxN3 = [7,15,33];
+        const elementOxN2 = [8,16,34,52];
+        const elementOxN1 = [9,17,35,53,85];
+        //add in ox +/-4
+
+        const elOxPairs = {
+            21 : ["3+"],
+            22 : ["3+","4+"],
+            23 : ["4+", "5+"],
+            24 : ["2+", "3+"],
+            25 : ["2+", "4+"],
+            26 : ["2+", "3+"],
+            27 : ["2+", "3+"],
+            28 : ["2+", "3+"],
+            29 : ["1+", "2+"],
+            30 : ["2+"],
+            32 : ["4+"],
+            39 : ["3+"],
+            40 : ["4+"],
+            41 : ["3+", "5+"],
+            42 : ["4+","6+"],
+            43 : ["4+"],
+            44 : ["3+", "4+"],
+            45 : ["3+"],
+            46 : ["2+", "4+"],
+            47 : ["1+"],
+            48 : ["2+"],
+            50 : ["2+", "4+"],
+            51 : ["3+", "5+"],
+            57 : ["3+"],
+            72 : ["4+"],
+            73 : ["5+"],
+            74 : ["6+"],
+            75 : ["4+"],
+            76 : ["4+"],
+            77 : ["4+"],
+            78 : ["2+", "4+"],
+            79 : ["1+", "3+"],
+            80 : ["1+", "2+"],
+            81 : ["1+", "3+"],
+            82 : ["2+", "4+"],
+            83 : ["3+", "5+"],
+            84 : ["2+", "4+"],
+            89 : ["3+"]
+
+            //do 104-117
+
+            //should i create a class -> different names/makes up -> ethan finds structure
+        };
+
+        elementOx1.forEach((element) =>
+            elOxPairs[element] = ["+1"]
+        );
+        elementOx2.forEach((element) =>
+            elOxPairs[element] = ["+2"]
+        );
+        elementOx3.forEach((element) =>
+            elOxPairs[element] = ["+3"]
+        );
+        elementOxN3.forEach((element) =>
+            elOxPairs[element] = ["-3"]
+        );
+        elementOxN2.forEach((element) =>
+            elOxPairs[element] = ["-2"]
+        );
+        elementOxN1.forEach((element) =>
+            elOxPairs[element] = ["-1"]
+        );
+        
+        const atomicNumToSymbol = {
+            1	:	"H",
+            2	:	"He",
+            3	:	"Li"	,
+            4	:	"Be"	,
+            5	:	"B"	,
+            6	:	"C"	,
+            7	:	"N"	,
+            8	:	"O"	,
+            9	:	"F"	,
+            10	:	"Ne"	,
+            11	:	"Na"	,
+            12	:	"Mg"	,
+            13	:	"Al"	,
+            14	:	"Si"	,
+            15	:	"P"	,
+            16	:	"S"	,
+            17	:	"Cl"	,
+            18	:	"Ar"	,
+            19	:	"K"	,
+            20	:	"Ca"	,
+            21	:	"Sc"	,
+            22	:	"Ti"	,
+            23	:	"V"	,
+            24	:	"Cr"	,
+            25	:	"Mn"	,
+            26	:	"Fe"	,
+            27	:	"Co"	,
+            28	:	"Ni	",
+            29	:	"Cu"	,
+            30	:	"Zn"	,
+            31	:	"Ga"	,
+            32	:	"Ge"	,
+            33	:	"As"	,
+            34	:	"Se"	,
+            35	:	"Br"	,
+            36	:	"Kr"	,
+            37	:	"Rb"	,
+            38	:	"Sr"	,
+            39	:	"Y",
+            40	:	"Zr"	,
+            41	:	"Nb"	,
+            42	:	"Mo"	,
+            43	:	"Tc"	,
+            44	:	"Ru"	,
+            45	:	"Rh"	,
+            46	:	"Pd",
+            47	:	"Ag",
+            48	:	"Cd",
+            49	:	"In",
+            50	:	"Sn",
+            51	:	"Sb",
+            52	:	"Te"	,
+            53	:	"I"	,
+            54	:	"Xe"	,
+            55	:	"Cs"	,
+            56	:	"Ba"	,
+            57	:	"La"	,
+            58	:	"Ce"	,
+            59	:	"Pr"	,
+            60	:	"Nd"	,
+            61	:	"Pm"	,
+            62	:	"Sm"	,
+            63	:	"Eu"	,
+            64	:	"Gd"	,
+            65	:	"Tb"	,
+            66	:	"Dy"	,
+            67	:	"Ho"	,
+            68	:	"Er"	,
+            69	:	"Tm"	,
+            70	:	"Yb"	,
+            71	:	"Lu"	,
+            72	:	"Hf"	,
+            73	:	"Ta"	,
+            74	:	"W"	,
+            75	:	"Re"	,
+            76	:	"Os"	,
+            77	:	"Ir"	,
+            78	:	"Pt"	,
+            79	:	"Au"	,
+            80	:	'Hg'	,
+            81	:	"Tl"	,
+            82	:	"Pb"	,
+            83	:	"Bi"	,
+            84	:	'Po'	,
+            85	:	'At'	,
+            86	:	"Rn"	,
+            87	:	"Fr"	,
+            88	:	'Ra'	,
+            89	:	"Ac"	,
+            90	:	'Th'	,
+            91	:	"Pa"	,
+            92	:	"U"	,
+            93	:	"Np"	,
+            94	:	"Pu"	,
+            95	:	"Am"	,
+            96	:	"Cm"	,
+            97	:	"Bk"	,
+            98	:	'Cf'	,
+            99	:	"Es"	,
+            100	:	"Fm"	,
+            101	:	"Md"	,
+            102	:	"No"	,
+            103	:	"Lr"	,
+            104	:	"Rf",
+            105	:	"Db"	,
+            106	:	"Sg"	,
+            107	:	"Bh"	,
+            108	:	"Hs"	,
+            109	:	"Mt"	,
+            110	:	'Ds'	,
+            111	:	'Rg'	,
+            112	:	"Uub"	,
+            113	:	"Uut"	,
+            114	:	"Uuq"	,
+            115	:	"Uup"	,
+            116	:	"Lv"	,
+            117	:	"Uus"	,
+            118	:	"Uuo"	,
+        }
+
+        function s(x,y){
+            var full = "<td>Sulfur: </td>"
+            atomicNumToEnergies[getAtomicNum(x,y)][0].forEach((string) =>
+                full += "<td>" + string + "</td>"
+            );
+            document.getElementById("s").innerHTML = full;
+        }
+        function se(x,y){
+            var full = "<td>Selenium: </td>"
+            atomicNumToEnergies[getAtomicNum(x,y)][1].forEach((string) =>
+                full += "<td>" + string + "</td>"
+            );
+            document.getElementById("se").innerHTML = full;
+        }
+
+        function te(x,y){
+            var full = "<td>Tellurium: </td>"
+            atomicNumToEnergies[getAtomicNum(x,y)][2].forEach((string) =>
+                full += "<td>" + string + "</td>"
+            );
+            document.getElementById("te").innerHTML = full;
+        }
+
+        function displayEnergies(x,y){
+            var full = "<td class = 'element'>";
+            full += atomicNumToSymbol[getAtomicNum(x,y)] + "</td>";     
+            elOxPairs[getAtomicNum(x,y)].forEach((string) =>
+                full += "<td>" + string +"</td>"
+            );
+            document.getElementById("oxidation state").innerHTML = full;
+            s(x,y);
+            se(x,y);
+            te(x,y);
+        }      
+        function click(x,y){
+            displayEnergies(x,y);          
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+td {
+    width: 5vw;
+    border: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: #96D4D4;
+}
+
+.num {
+    font-size: 10px;
+    /*how do i change it so the number is at the top left instead of center?*/
+}
+
+.invis {
+    background-color: transparent;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic; 
+}
+.oneFound{
+    background-color: palegreen;
+}
+
+.twoFound {
+    background-color: peachpuff;
+}
+
+.threeFound {
+    background-color:lightpink;
+} 
+
+td:hover {
+    cursor: pointer;
+    border-color: gray;
+    filter: brightness(70%) contrast(220%);
+}
+
+td.invis:hover {
+    cursor: default;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+td.selected{
+    border-color: gray;
+    filter: brightness(70%) contrast(220%);
+}
+
+legend {
+    padding: 3px 6px;
+}
+
+.popup {
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px;
+    border: 1px solid black;
+}
+
+h2 {
+    font-style: italic;
+    text-align: center
+}
+
+ul {
+    text-align: left;
+}
